@@ -53,13 +53,30 @@ p {
 .section-heading h2:before {
   width: 1px;
   height: 100px;
-  background-color: #58ac04;
+  background-color: #233e75;
   position: absolute;
   top: -102px;
   content: "";
   left: 50%;
   transform: translate(-50%);
 }
+.section-heading1 h2 {
+  margin-top: 100px;
+  position: relative;
+  left:20%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 15px 20px;
+  border: 2px solid #233e75;
+}
+
+.overview {
+  border-bottom: 1px solid #233e75;
+}
+
 
 .section-heading h2 {
   margin-top: 100px;
@@ -70,13 +87,13 @@ p {
   letter-spacing: 0.5px;
   display: inline-block;
   padding: 15px 20px;
-  border: 2px solid #58ac04;
+  border: 2px solid #233e75;
 }
 
 /* Buttons */
 
 .main-button a {
-  background-color: #58ac04;
+  background-color: #233e75;
   border-radius: 5px;
   color: #fff;
   font-size: 13px;
@@ -140,7 +157,7 @@ a.menu-link {
   }
   nav[role="navigation"] li:hover a,
   nav[role="navigation"] li.active a {
-    color: #58ac04;
+    color: #233e75;
   }
 
   @media screen and (min-width: 951px) {
@@ -197,7 +214,7 @@ a.menu-link {
 }
 .main-header .logo a em {
   font-style: normal;
-  color: #58ac04;
+  color: #233e75;
 }
 
 .main-menu {
@@ -251,6 +268,7 @@ a.menu-link {
 .main-menu li:hover .sub-menu {
   opacity: 1;
   visibility: visible;
+  top: 60px;
 }
 
 .main-menu li .sub-menu li {
@@ -281,13 +299,13 @@ a.menu-link {
 }
 
 .main-menu li .sub-menu li a:hover {
-  color: #58ac04;
+  color: #233e75;
   border: none;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-  border: 2px solid #58ac04;
+  border: 2px solid #233e75;
 }
 
 @media (max-width: 950px) {
@@ -322,7 +340,6 @@ a.menu-link {
 
 .video-overlay {
   position: absolute;
-  background-color: rgba(22, 34, 57, 0.85);
   top: 0;
   left: 0;
   bottom: 7px;
@@ -343,7 +360,7 @@ a.menu-link {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #fff;
+  color: #000;
   letter-spacing: 1px;
 }
 
@@ -353,13 +370,13 @@ a.menu-link {
   font-size: 64px;
   text-transform: uppercase;
   font-weight: 800;
-  color: #fff;
+  color: #000;
   letter-spacing: 1px;
 }
 
 .main-banner .caption h2 em {
   font-style: normal;
-  color: #58ac04;
+  color:#233e75;
   font-weight: 900;
 }
 
@@ -414,7 +431,7 @@ section.features .col-4 {
 }
 
 .features-content:hover {
-  background-color: #58ac04;
+  background-color: #233e75;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -495,7 +512,7 @@ section.why-us {
   /*background-image: url(../images/choosing-bg.jpg);*/
   background-color: #fff;
   background-repeat: no-repeat;
-  border-bottom: 1px solid #58ac04;
+  border-bottom: 1px solid #233e75;
   background-size: cover;
   padding-bottom: 100px;
 }
@@ -568,15 +585,15 @@ section.why-us {
 #tabs ul .ui-tabs-active {
 }
 #tabs ul .ui-tabs-active a {
-  color: #58ac04;
+  color: #233e75;
 }
 #tabs ul .ui-tabs-active a:after {
-  background-color: #58ac04;
+  background-color: #233e75;
   width: 15px;
   height: 15px;
 }
 #tabs ul .ui-tabs-active a:before {
-  border-color: #58ac04;
+  border-color: #233e75;
 }
 #tabs h4 {
   margin-top: 60px;
@@ -588,6 +605,11 @@ section.why-us {
 }
 
 #tabs p {
+  color: #000;
+  font-size: 15px;
+  line-height: 28px;
+}
+.tab p {
   color: #000;
   font-size: 15px;
   line-height: 28px;
@@ -620,10 +642,11 @@ section.why-us {
 /* Coming Soon */
 
 section.coming-soon {
-  background-image: url(../images/bg-img2.png);
+  background-image: url(../images/image4.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   /*background-color: #fff;*/
+  opacity:0.7;
   padding: 120px 0px;
 }
 
@@ -633,7 +656,7 @@ section.coming-soon .continer .counter div {
 section.coming-soon .continer h4 {
   margin-top: 100px;
   font-size: 30px;
-  color: #fff;
+  color: #000;
   font-weight: 800;
   letter-spacing: 0.5px;
   line-height: 40px;
@@ -641,7 +664,7 @@ section.coming-soon .continer h4 {
 }
 section.coming-soon .continer h4 em {
   font-style: normal;
-  color: #58ac04;
+  color: #233e75;
 }
 
 @media screen and (max-width: 767px) {
@@ -700,7 +723,7 @@ section.coming-soon .continer .counter .seconds .value {
 section.coming-soon .continer .counter span {
   font-size: 18px;
   text-transform: uppercase;
-  color: #58ac04;
+  color: #233e75;
   font-weight: 500;
   letter-spacing: 1px;
   margin-top: 0px;
@@ -776,7 +799,7 @@ section.coming-soon form input::placeholder {
 
 section.coming-soon form button {
   margin-top: 10px;
-  background-color: #58ac04;
+  background-color: #233e75;
   color: #000;
   font-size: 13px;
   text-transform: uppercase;
@@ -797,7 +820,7 @@ section.courses {
   background-size: cover;
   background-color: #fff;
   padding-bottom: 100px;
-  border-bottom: 1px solid #58ac04;
+  border-bottom: 1px solid #233e75;
   padding: 0px 30px 100px 30px;
 }
 
@@ -806,6 +829,7 @@ section.courses .item img {
   border-top-left-radius: 5px;
 }
 section.courses .item {
+  width:120% !important;
   border-radius: 5px; /* Adjust this value to control the amount of curvature */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -833,7 +857,7 @@ section.courses .item .down-content p {
 
 section.courses .item .down-content img {
   width: 40px;
-  border: 2px solid #58ac04;
+  border: 2px solid #233e75;
   border-radius: 50%;
   text-align: left;
   display: inline-block;
@@ -846,7 +870,7 @@ section.courses .item .down-content .text-button-pay {
 }
 
 section.courses .item .down-content .text-button-pay a {
-  color: #58ac04;
+  color: #233e75;
   font-size: 13px;
 }
 
@@ -877,7 +901,7 @@ section.courses .owl-carousel button.owl-dot {
   outline: none;
 }
 section.courses .owl-carousel button.active {
-  background-color: #58ac04;
+  background-color: #233e75;
 }
 
 /* Video */
@@ -887,7 +911,7 @@ section.video {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
-  border-bottom: 1px solid #58ac04;
+  border-bottom: 1px solid #233e75;
   padding: 120px 0px;
 }
 
@@ -912,7 +936,7 @@ section.video .left-content h4 {
 }
 section.video .left-content h4 em {
   font-style: normal;
-  color: #58ac04;
+  color: #233e75;
 }
 
 section.video .left-content .main-button {
@@ -955,7 +979,7 @@ section.video .left-content .main-button {
   margin-top: -32.5px;
   margin-left: -32.5px;
   border-radius: 50%;
-  background-color: #58ac04;
+  background-color: #233e75;
   z-index: 10;
 }
 .video-item figure a:after {
@@ -971,7 +995,7 @@ section.video .left-content .main-button {
   z-index: 10;
 }
 .video-item figure a:hover:before {
-  background-color: #58ac04;
+  background-color: #233e75;
 }
 
 .video-item .video-caption {
@@ -1447,7 +1471,7 @@ section.contact {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid #58ac04;
+  border-bottom: 1px solid #233e75;
   padding-bottom: 120px;
 }
 section.contact #map {
@@ -1529,7 +1553,7 @@ section.contact form textarea::placeholder {
 }
 
 section.contact form button {
-  background-color: #58ac04;
+  background-color: #233e75;
   border-radius: 5px;
   color: #fff;
   font-size: 13px;
@@ -1562,7 +1586,7 @@ footer p {
 
 footer p a,
 footer p a:hover {
-  color: #58ac04;
+  color: #233e75;
 }
 
 @media screen and (max-width: 992px) {
