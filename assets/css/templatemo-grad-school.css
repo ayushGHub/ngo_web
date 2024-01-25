@@ -62,19 +62,41 @@ p {
 }
 .section-heading1 h2 {
   margin-top: 100px;
+  margin-left:50px;
   position: relative;
-  left:20%;
-  font-size: 18px;
-  font-weight: 500;
-  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+  color: #233e75;
   letter-spacing: 0.5px;
   display: inline-block;
-  padding: 15px 20px;
-  border: 2px solid #233e75;
+  padding: 15px 0px;
+  box-sizing: border-box;
+
+  /* border: 2px solid #233e75; */
 }
 
-.overview {
-  border-bottom: 1px solid #233e75;
+.overview-content p{
+    color: #000;
+    font-size: 15px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+.new-footer{
+    border-top: 1px solid #233e75; /* Border color for the top */
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1); /* Box shadow for the bottom */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+.campaign-info h4{
+  width:95%;
+  margin-left: 50px; /* Adjust the left margin as needed */
+  color: #233e75;
+}
+.campaign-info p{
+  width:95%;
+  color: #000;
+  margin-left: 50px;
+  font-size: 15px;
+  line-height: 28px;
 }
 
 
@@ -353,6 +375,17 @@ a.menu-link {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background:rgba(10,10,10,0.3222);
+  padding:100px;
+}
+section.motto{
+  width:100%;
+  height:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#233e75;
+  border-bottom: 1px solid #233e75;
 }
 
 .main-banner .caption h6 {
@@ -360,7 +393,7 @@ a.menu-link {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #000;
+  color: #fff;
   letter-spacing: 1px;
 }
 
@@ -370,7 +403,7 @@ a.menu-link {
   font-size: 64px;
   text-transform: uppercase;
   font-weight: 800;
-  color: #000;
+  color: #fff;
   letter-spacing: 1px;
 }
 
@@ -516,7 +549,6 @@ section.why-us {
   background-size: cover;
   padding-bottom: 100px;
 }
-
 #tabs {
   text-align: center;
 }
@@ -618,6 +650,20 @@ section.why-us {
 .tabs-content {
   margin-top: 60px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tabs-content #tabs-2 .main-button{
+   margin-top: 2.7rem;
+}
+
+.tabs-content #tabs-3 .main-button{
+  margin-top: 4.45rem;
+}
+.tabs-content .main-button{
+    margin-top: auto; /* Pushes the button to the bottom */
 }
 
 @media screen and (max-width: 767px) {
@@ -638,33 +684,60 @@ section.why-us {
     padding-right: 0px;
   }
 }
+.clearfix{
+  border-bottom: 1px solid #233e75;
+}
 
 /* Coming Soon */
 
 section.coming-soon {
   background-image: url(../images/image4.jpeg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 120% 100%;
+  height:100%;
+  width:80%;
+  margin-top: 0px;
   /*background-color: #fff;*/
-  opacity:0.7;
-  padding: 120px 0px;
+  padding: 180px 0px;
+}
+section.new-section{
+  display: flex;
+  border-bottom: 1px solid #233e75;
+}
+section.new-section .continer h4 {
+  text-align: left;
+  color:#233e75;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+section.new-section .continer h8 {
+  text-align: left;
+  color:#000;
+  padding-right:30px;
+  padding-bottom: 10px;
 }
 
-section.coming-soon .continer .counter div {
+section.coming-soon .continer div {
   display: inline-block;
+  background:rgba(10,10,10,0.5);
 }
-section.coming-soon .continer h4 {
+section.coming-soon .continer{
   margin-top: 100px;
   font-size: 30px;
-  color: #000;
+  color: #fff;
   font-weight: 800;
   letter-spacing: 0.5px;
   line-height: 40px;
   margin-bottom: 50px;
+  height:100%;
 }
 section.coming-soon .continer h4 em {
   font-style: normal;
-  color: #233e75;
+  color: #0d1f43;
 }
 
 @media screen and (max-width: 767px) {
@@ -728,6 +801,20 @@ section.coming-soon .continer .counter span {
   letter-spacing: 1px;
   margin-top: 0px;
   display: block;
+}
+.overview{
+ box-sizing:border-box;
+}
+section.about-us .continer .overview h4 {
+  padding-top: 70px;
+  font-weight: 500;
+}
+section.about-us .continer .we-offer h4 {
+  padding-top: 10px;
+  font-weight: 500;
+}
+section.about-us .continer .we-offer h8 {
+  margin-bottom: 50px;
 }
 
 section.coming-soon .right-content {
@@ -1481,7 +1568,10 @@ section.contact #map {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-section.contact form {
+section.contact .info {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px; /* Adjust this value to control the amount of curvature */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
